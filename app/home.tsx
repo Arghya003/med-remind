@@ -106,7 +106,7 @@ export default function HomeScreen() {
                         </TouchableOpacity>
                     </Link>
                 </View>
-                {false? (
+                {true? (
                     <View style={styles.emptyState}>
                         <FontAwesome5 name="clinic-medical" size={48} color="#ccc" />
                         <Text style={styles.emptyStateText}>No Medications scheduled for Today</Text>
@@ -226,12 +226,14 @@ const styles = StyleSheet.create({
     headerContent: {
         alignItems: "center",
         paddingHorizontal: 20,
+        justifyContent: 'space-between'
     },
     headerTop: {
         flexDirection: "row",
         alignItems: "center",
         width: "100%",
         marginBottom: 20,
+        justifyContent:'space-between'
     },
     greeting: {
         fontSize: 18,
@@ -446,7 +448,7 @@ const styles = StyleSheet.create({
         padding: 15,
         borderRadius: 12,
         backgroundColor: "#f5f5f5",
-        marginBottom: 10,
+        marginBottom: 20,
     },
     notificationIcon: {
         width: 40,
@@ -456,7 +458,7 @@ const styles = StyleSheet.create({
         opacity: 0.8,
         justifyContent: "center",
         alignItems: "center",
-        marginRight: 35,
+        marginRight: 5,
         marginTop:10,
     },
     notificationContent: {
